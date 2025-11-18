@@ -11,9 +11,9 @@ description: Information and announcements for the CS Graduate Research Seminar 
 
 The **CS Graduate Research Seminar** is a bi-weekly forum for graduate students to:
 
-- Learn about current research in computer science  
-- Practice asking good research questions  
-- Build connections across labs, research areas, and career paths  
+- Learn about current research in computer science
+- Practice asking good research questions
+- Build connections across labs, research areas, and career paths
 
 Pizza is usually provided 🍕, and everyone is encouraged to stay for informal discussion after the talk.
 
@@ -24,19 +24,18 @@ Pizza is usually provided 🍕, and everyone is encouraged to stay for informal 
 {% assign seminar_posts = site.seminars | sort: "date" | reverse %}
 
 {% if seminar_posts.size > 0 %}
-  {% assign latest = seminar_posts.first %}
+{% assign latest = seminar_posts.first %}
 
-  **Title:** [{{ latest.title }}]({{ latest.url | relative_url }})  
-  **Date:** {{ latest.date | date: "%A, %B %-d, %Y" }}
+**Title:** [{{ latest.title }}]({{ latest.url | relative_url }})  
+ **Date:** {{ latest.date | date: "%A, %B %-d, %Y" }}
 
-  {{ latest.excerpt | strip_html | truncate: 260 }}
+{{ latest.excerpt | strip_html | truncate: 260 }}
 
-  [Read full announcement →]({{ latest.url | relative_url }})
+[Read full announcement →]({{ latest.url | relative_url }})
 
 {% else %}
-  No seminar announcements yet. Check back soon!
+No seminar announcements yet. Check back soon!
 {% endif %}
-
 
 ---
 
@@ -47,16 +46,16 @@ School of Electrical Engineering and Computer Science (EECS) at Washington State
 
 **Goals of the series:**
 
-- Showcase ongoing research in CS and related areas  
-- Help students practice presenting and critiquing research  
-- Provide a low-pressure environment to ask questions  
-- Connect students with potential collaborators and mentors  
+- Showcase ongoing research in CS and related areas
+- Help students practice presenting and critiquing research
+- Provide a low-pressure environment to ask questions
+- Connect students with potential collaborators and mentors
 
 **Typical logistics:**
 
-- **When:** Bi-weekly, mid-day (usually 12:00–1:00 PM)  
-- **Where:** VCEA EME 52 (unless otherwise noted)  
-- **Who:** CS graduate students, faculty, and interested undergrads  
+- **When:** Bi-weekly, mid-day (usually 12:00–1:00 PM)
+- **Where:** VCEA EME 52 (unless otherwise noted)
+- **Who:** CS graduate students, faculty, and interested undergrads
 
 ---
 
@@ -64,10 +63,10 @@ School of Electrical Engineering and Computer Science (EECS) at Washington State
 
 Below is a list of all seminar-related posts.
 
-
 ## Past Seminar Announcements
 
 {% if seminar_posts.size > 1 %}
+
 <ul class="post-list">
   {% for post in seminar_posts offset:1 %}
     <li>

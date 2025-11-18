@@ -42,7 +42,7 @@
     }
   ],
   "education": [
-      {
+    {
       "institution": "Washington State University",
       "location": "Pullman, WA, USA",
       "url": "https://wsu.edu/",
@@ -75,7 +75,6 @@
       "GPA": "7.55/10",
       "courses": ["Data Structures and Algorithms", "Operating Systems", "Database Management Systems"]
     }
-
   ],
   "awards": [
     {
@@ -99,23 +98,13 @@
       "name": "Coding Languages",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Python",
-        "C++",
-        "JavaScript"
-      ]
+      "keywords": ["Python", "C++", "JavaScript"]
     },
     {
       "name ": "Computer Science Topics",
       "level": "Advanced",
       "icon": "fa-solid fa-computer",
-      "keywords": [
-        "Algorithms",
-        "Data Structures",
-        "Parallel Computing",
-        "Probabilistic Analysis",
-        "Combionatorial Optimization"
-      ]
+      "keywords": ["Algorithms", "Data Structures", "Parallel Computing", "Probabilistic Analysis", "Combionatorial Optimization"]
     }
   ],
   "languages": [
@@ -139,12 +128,7 @@
     {
       "name": "Computer Science",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Algorithms",
-        "Graph Theory",
-        "High Performance Computing",
-        "Machine Learning"
-      ]
+      "keywords": ["Algorithms", "Graph Theory", "High Performance Computing", "Machine Learning"]
     }
   ]
 }
