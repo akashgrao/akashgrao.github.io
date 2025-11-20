@@ -168,29 +168,58 @@ h6 {
 }
 
 .about-name {
-  font-weight: 800; /* heavier than existing font-weight-bold */
-  color: var(--global-theme-color);
-  position: relative;
+  font-weight: 800;
+  /* Responsive clamp: min 2.2rem, preferred 6vw, max 3.2rem */
+  font-size: clamp(2.2rem, 6vw, 3.2rem);
+  line-height: 1.05;
+  background: linear-gradient(90deg, var(--global-theme-color), var(--global-hover-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; /* show gradient */
   display: inline-block;
+  position: relative;
   padding-right: 0.15em;
 }
 
+/* Animated highlight underline */
 .about-name::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0.08em;
-  height: 0.35em;
+  bottom: 0.05em;
+  height: 0.28em;
   width: 100%;
   background: linear-gradient(90deg, var(--global-theme-color) 0%, var(--global-hover-color) 100%);
-  opacity: 0.18;
+  opacity: 0.25;
   border-radius: 3px;
-  pointer-events: none;
+  filter: saturate(140%);
+  transition: opacity 0.35s ease, transform 0.4s ease;
 }
 
-/* Dark theme tweak for better contrast */
+.about-name:hover::after {
+  opacity: 0.55;
+  transform: translateY(2px);
+}
+
+/* Subtle shimmer on hover */
+.about-name:hover {
+  background: linear-gradient(90deg, var(--global-hover-color), var(--global-theme-color));
+}
+
+/* Dark theme tweak */
 html[data-theme="dark"] .about-name::after {
-  opacity: 0.25;
+  opacity: 0.35;
+}
+
+/* Reduced motion preference: disable animation */
+@media (prefers-reduced-motion: reduce) {
+  .about-name::after, .about-name:hover::after {
+    transition: none;
+    transform: none;
+  }
+  .about-name:hover {
+    background: linear-gradient(90deg, var(--global-theme-color), var(--global-hover-color));
+  }
 }
 
 .no-posts-msg {

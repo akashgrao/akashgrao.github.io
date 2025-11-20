@@ -9,7 +9,7 @@ profile:
   image: prof_pic_2.jpg
   image_circular: false
 
-quote: "Turning messy graphs into elegant algorithms since the days of dial‑up."
+quote: "Runs on coffee and curiosity to design algorithms held together by heuristics, questionable cluster configurations and hope."
 
 selected_papers: true
 social: true
