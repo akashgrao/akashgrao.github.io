@@ -193,7 +193,9 @@ h6 {
   opacity: 0.25;
   border-radius: 3px;
   filter: saturate(140%);
-  transition: opacity 0.35s ease, transform 0.4s ease;
+  transition:
+    opacity 0.35s ease,
+    transform 0.4s ease;
 }
 
 .about-name:hover::after {
@@ -213,7 +215,8 @@ html[data-theme="dark"] .about-name::after {
 
 /* Reduced motion preference: disable animation */
 @media (prefers-reduced-motion: reduce) {
-  .about-name::after, .about-name:hover::after {
+  .about-name::after,
+  .about-name:hover::after {
     transition: none;
     transform: none;
   }
