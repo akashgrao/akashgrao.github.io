@@ -80,7 +80,12 @@
 }
 
 // --- Global heading capitalization override ---
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-transform: capitalize;
 }
 
@@ -113,7 +118,8 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 240px;
 }
 
-.profile.float-left, .profile.float-right {
+.profile.float-left,
+.profile.float-right {
   /* neutralize float when flex applied */
   float: none !important;
   margin: 0 1.5rem 1rem 0;
