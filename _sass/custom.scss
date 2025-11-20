@@ -158,6 +158,16 @@ h6 {
 
 .about-intro .clearfix {
   padding-top: 0.25rem;
+  /* add breathing room from the right edge on wider viewports so the
+     biography column doesn't feel cramped against the page border */
+  padding-right: 3rem;
+}
+
+@media (max-width: 767px) {
+  /* stack/layout changes on small screens — remove extra right padding */
+  .about-intro .clearfix {
+    padding-right: 0;
+  }
 }
 
 .about-divider {
